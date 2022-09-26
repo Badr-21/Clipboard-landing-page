@@ -1,0 +1,605 @@
+:root {
+    /*## Colors
+    ### Primary*/
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    /*### Neutral*/
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-image: url(images/bg-header-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > picture {
+    padding: 5rem 0;
+}
+
+header > picture img {
+    width: 70%;
+}
+
+.container {
+    width: 100%;
+}
+
+.container .sec-one {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.container .sec-one h1 {
+    margin-top: -1.5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.container .sec-one p {
+    width: 60%;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+    margin-bottom: 2rem;
+}
+
+.container .sec-one .sec-one-button button {
+    padding: .5rem 2rem;
+    border: none;
+    color: white;
+    border-radius: 2rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.container .sec-one button:first-of-type {
+    background-color: var(--Strong-Cyan);
+    box-shadow: 0 -0.0938rem rgb(35, 102, 92) inset, 0.0625rem 0.0625rem 0.5rem rgba(38, 186, 164, 0.5);
+}
+
+.container .sec-one button:last-of-type {
+    background-color: var(--Light-Blue);
+    box-shadow: 0 -0.0938rem rgb(56, 72, 194) inset, 0.0625rem 0.0625rem 0.5rem rgb(97, 115, 255, 0.5);
+}
+
+.container .sec-two {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.container .sec-two h2 {
+    text-align: center;
+    font-size: 2.0625rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.container .sec-two > p {
+    width: 65%;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+}
+
+.container .sec-two .sec-two-image-text {
+    margin: 3rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container .sec-two .sec-two-image-text .sec-two-image {
+    width: 80%;
+    margin:0 2rem 0 -2rem;
+}
+
+.container .sec-two .sec-two-image-text .sec-two-image img {
+    width: 100%;
+}
+
+.container .sec-two .sec-two-image-text .sec-two-text {
+    padding: 2rem;
+}
+
+.container .sec-two .sec-two-image-text .sec-two-text h3 {
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: .5rem;
+}
+
+.container .sec-two .sec-two-image-text .sec-two-text p {
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--Grayish-Blue);
+    margin-bottom: 2rem;
+}
+
+.container .sec-three {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .sec-three h2 {
+    text-align: center;
+    font-size: 2.0625rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.container .sec-three > p {
+    width: 65%;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+}
+
+.container .sec-three .sec-three-image {
+    margin-top: 4rem;
+    
+}
+
+.container .sec-three .sec-three-image picture {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.container .sec-three .sec-three-image img {
+    width: 90%;
+}
+
+.container .sec-four {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.container .sec-four h2 {
+    text-align: center;
+    font-size: 2.0625rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.container .sec-four > p {
+    width: 65%;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+}
+
+.container .sec-four .sec-four-tools {
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container .sec-four .sec-four-tools .tool {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+} 
+
+.container .sec-four .sec-four-tools .tool .tool-image {
+    margin-bottom: 1.2rem;
+}
+
+.container .sec-four .sec-four-tools .tool h3 {
+    font-size: 1.375rem;
+    font-weight: 600;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: .5rem;
+}
+
+.container .sec-four .sec-four-tools .tool p {
+    width: 90%;
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--Grayish-Blue);
+    margin-bottom: 3rem;
+}
+
+.sec-four .companies {
+    width: 100%;
+    padding: 0 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .sec-five {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.container .sec-five h2 {
+    text-align: center;
+    font-size: 2.0625rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    color: var(--Dark-Grayish-Blue);
+}
+
+.container .sec-five p {
+    width: 65%;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+    margin-bottom: 2rem;
+}
+
+.container .sec-five .sec-five-button button {
+    padding: .5rem 2rem;
+    border: none;
+    color: white;
+    border-radius: 2rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.container .sec-five .sec-five-button button:first-of-type {
+    background-color: var(--Strong-Cyan);
+    box-shadow: 0 -0.0938rem rgb(35, 102, 92) inset, 0.0625rem 0.0625rem 0.5rem rgba(38, 186, 164, 0.5);
+}
+
+.container .sec-five .sec-five-button button:last-of-type {
+    background-color: var(--Light-Blue);
+    box-shadow: 0 -0.0938rem rgb(56, 72, 194) inset, 0.0625rem 0.0625rem 0.5rem rgb(97, 115, 255, 0.5);
+}
+
+footer {
+    width: 100%;
+    padding: 2rem 4rem;
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
+}
+
+footer .logo-footer img{
+    width: 40%;
+}
+
+footer .contact-us {
+    width: 55%;
+    font-size: 1.125rem;
+    font-weight: 400;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+footer .contact-us > div {
+    margin-right: 4rem;
+}
+
+footer .contact-us > div p {
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: .8rem;
+}
+
+footer .social-media-accounts {
+    margin-left: 10.9rem;
+}
+
+footer .social-media-accounts img {
+    margin-right: 1rem;
+}
+
+@media (max-width: 375px) {
+    :root {
+        font-size: 0.8125rem;
+    }
+
+    header {
+        background-image: url(images/bg-header-mobile.png);
+    }
+
+    header > picture {
+        padding: 8rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .sec-one {
+        margin-bottom: 12rem;
+    }
+
+    .container .sec-one h1 {
+        width: 90%;
+        margin-top: -3.5rem;
+    }
+
+    .container .sec-one p {
+        width: 75%;
+        margin-bottom: 3rem;
+    }
+
+    .container .sec-one .sec-one-button {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .sec-one .sec-one-button button {
+        width: 80%;
+        padding: 1rem 0;
+        font-size: 1.25rem;
+    }
+
+    .container .sec-one button:first-of-type {
+        margin-bottom: 1.5rem;
+    }
+
+    .container .sec-two {
+        margin-bottom: 2rem;
+    }
+
+    .container .sec-two h2 {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+
+    .container .sec-two > p {
+        width: 75%;
+        margin-bottom: 5rem;
+    }
+
+    .container .sec-two .sec-two-image-text {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container .sec-two .sec-two-image-text .sec-two-image {
+        width: 100%;
+        margin:0 0 4rem 0;
+    }
+
+    .container .sec-two .sec-two-image-text .sec-two-image picture {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container .sec-two .sec-two-image-text .sec-two-image img {
+        width: 85%;
+    }
+
+    .container .sec-two .sec-two-image-text .sec-two-text {
+        padding: 0 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 8rem;
+    }
+
+    .container .sec-two .sec-two-image-text .sec-two-text h3 {
+        margin-bottom: 1rem;
+    }
+
+    .container .sec-two .sec-two-image-text .sec-two-text p {
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+
+    .container .sec-three {
+        margin-bottom: 8rem;
+    }
+
+    .container .sec-three h2 {
+        width: 70%;
+        margin-bottom: 1.2rem;
+    }
+    
+    .container .sec-three > p {
+        width: 75%;
+    }
+
+    .container .sec-three .sec-three-image {
+        margin-top: 4.5rem;
+        
+    }
+
+    .container .sec-four h2 {
+        width: 80%;
+    }
+
+    .container .sec-four > p {
+        margin-bottom: 4rem;
+    }
+
+    .container .sec-four .sec-four-tools {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .sec-four .sec-four-tools .tool {
+        width: 100%;
+        margin-bottom: 6rem;
+    } 
+
+    .container .sec-four .sec-four-tools .tool .tool-image {
+        margin-bottom: 2.2rem;
+    }
+
+    .container .sec-four .sec-four-tools .tool h3 {
+        margin-bottom: 1.5rem;
+    }
+    
+    .container .sec-four .sec-four-tools .tool p {
+        width: 75%;
+        font-size: 1.1rem;
+        margin-bottom: 3rem;
+    }
+
+    .sec-four .companies {
+        padding: 0;
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .sec-four .companies .company {
+        margin-bottom: 6rem;
+    }
+
+    .container .sec-five {
+        margin-bottom: 8rem;
+    }
+
+    .container .sec-five h2 {
+        width: 80%;
+        margin-bottom: 1.5rem;
+    }
+    
+    .container .sec-five p {
+        width: 74.5%;
+        margin-bottom: 3rem;
+    }
+
+    .container .sec-five .sec-five-button {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .sec-five .sec-five-button button {
+        width: 80%;
+        padding: 1rem 0;
+        font-size: 1.25rem;
+    }
+
+    .container .sec-five button:first-of-type {
+        margin-bottom: 1.5rem;
+    }
+
+    footer {
+        padding: 4rem 0;
+        flex-direction: column;
+    }
+
+    footer .logo-footer {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    footer .logo-footer picture {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .logo-footer picture img{
+        width: 15%;
+    }
+
+    footer .contact-us {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    footer .contact-us > div {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    footer .contact-us > div p {
+        margin-bottom: 2rem;
+    }
+
+    footer .social-media-accounts {
+        margin-left: 0;
+    }
+
+    footer .social-media-accounts img {
+        margin-right: 2rem;
+    }
+}
+
+@media (hover: hover) {
+    .container .sec-one button:first-of-type:hover {
+        opacity: .8;
+        cursor: pointer;
+    }
+
+    .container .sec-one button:last-of-type:hover {
+        opacity: .8;
+        cursor: pointer;
+    }
+
+    .container .sec-five button:first-of-type:hover {
+        opacity: .8;
+        cursor: pointer;
+    }
+
+    .container .sec-five button:last-of-type:hover {
+        opacity: .8;
+        cursor: pointer;
+    }
+
+    footer .social-media-accounts img:hover {
+        filter: invert(45%) sepia(47%) saturate(4704%) hue-rotate(219deg) brightness(102%) contrast(101%);
+        cursor: pointer;
+    }
+
+    footer .contact-us div p:hover {
+        color: var(--Strong-Cyan);
+        cursor: pointer;
+    }
+}
